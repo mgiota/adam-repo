@@ -17,17 +17,19 @@
   <body>
 
   <nav>
-    <ul>
-      <li><%= link_to "Home", root_path %></li>
-      <li><%= link_to "About", simple_pages_about_path %></li>
-      <li><%= link_to "Contact", simple_pages_contact_path %></li>
-    </ul>
+    <div class='menu'>
+      <ul>
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "About", simple_pages_about_path %></li>
+        <li><%= link_to "Contact", simple_pages_contact_path %></li>
+      </ul>
+    </div>
   </nav>
 
   <%= yield %>
 
   <footer>
-    &copy; 2018 Bike Berlin
+    <span>&copy; 2018 Bike Köln</span>
   </footer>
 
   </body>
