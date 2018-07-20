@@ -58,8 +58,10 @@ nav li {
 }
 
 ul a {
-   color: #101010ad;
+    color: #101010ad;
 }
+
+    /* footer */
 
 footer {
     position: absolute;
