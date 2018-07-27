@@ -76,7 +76,7 @@ footer span {
     color: #101010ad;
 }
 
-.hyphenate {
+td {
     /* Careful, this breaks the word wherever it is without a hyphen */
     overflow-wrap: break-word;
     word-wrap: break-word;
