@@ -20,28 +20,17 @@
 body {
     text-align: center;
     background-color: #F3F3F3;
+    margin: 0.75rem;
 }
 
 h1 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    color: #444;
-    text-shadow: 
-      1px 0px 1px #ccc, 0px 1px 1px #eee, 
-      2px 1px 1px #ccc, 1px 2px 1px #eee,
-      3px 2px 1px #ccc, 2px 3px 1px #eee,
-      4px 3px 1px #ccc, 3px 4px 1px #eee,
-      5px 4px 1px #ccc, 4px 5px 1px #eee,
-      6px 5px 1px #ccc, 5px 6px 1px #eee,
-      7px 6px 1px #ccc;
 }
 
 h2, p {
-    font-family: 'Dosis', sans-serif;
-    
+    font-family: 'Dosis', sans-serif;   
 }
 
 p {
@@ -136,6 +125,15 @@ td {
 
 #page-title {
     margin: 3rem;
+    color: #444;
+    text-shadow: 
+      1px 0px 1px #ccc, 0px 1px 1px #eee, 
+      2px 1px 1px #ccc, 1px 2px 1px #eee,
+      3px 2px 1px #ccc, 2px 3px 1px #eee,
+      4px 3px 1px #ccc, 3px 4px 1px #eee,
+      5px 4px 1px #ccc, 4px 5px 1px #eee,
+      6px 5px 1px #ccc, 5px 6px 1px #eee,
+      7px 6px 1px #ccc;
 }
 
 #about {
@@ -144,3 +142,30 @@ td {
     margin: 2rem;
 }
 
+/* landing page */
+
+.carousel-indicators {
+    position: relative;
+    bottom: auto;
+}
+
+.carousel-caption {
+    position: sticky;
+    margin-top: 1rem;
+
+}
+
+.carousel-text {
+    color:#000000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.carousel-inner {
+    overflow: visible;
+}
+
+
+#landing {
+    background-color: #ffffff;
+    border-radius: 1rem;
+}
