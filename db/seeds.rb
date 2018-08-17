@@ -12,7 +12,7 @@ Product.create(name: "seed product", description: "comes with a deck of cards", 
 
 Product.create(name: "seed product", description: "made of cardboard tubes", image_url: "bike3.jpg", price: 830)
 
-Product.create(name: "seed product", description: "recoverd from the titanic", image_url: "bike4.jpg", price: 15.000)
+Product.create(name: "seed product", description: "recovered from the titanic", image_url: "bike4.jpg", price: 15.000)
 
 Order.create(user_id: 1, product_id: 1, price: 500, total: 10.0)
 Order.create(user_id: 1, product_id: 2, price: 1000, total: 500.0)
