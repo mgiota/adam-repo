@@ -81,6 +81,19 @@ ul a {
     padding: 1rem;
 }
 
+.btn {
+    font-size: inherit;
+    padding: 0.15rem;
+    color: #666;
+    background-color: #e0e0e0bf;
+    border: solid black 0.05rem;
+    
+}
+
+.form-fld {
+    border-radius: 0.25rem;
+}
+
     /* footer */
 
 footer {

@@ -39,6 +39,12 @@
       </li>
     </ul>
   </div>
+
+  <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+    <%= form.submit 'Search', class: 'btn btn-submit' %>
+    <%= form.text_field :q, id: 'q', value: params[:q], class: 'form-fld' %>
+  <% end %>
+
 </nav>
 
   <%= yield %>
