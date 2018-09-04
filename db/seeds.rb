@@ -6,8 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Product.delete_all
-Order.delete_all
+Product.destroy_all
+Order.destroy_all
 
 products = Product.create([
     {name: "seed product", description: "two wheels and a frame", image_url: "bike1.jpg", price: 505},
