@@ -90,11 +90,8 @@ ul a {
     
 }
 
-.form-fld {
-    border-radius: 0.25rem;
-}
 
-    /* footer */
+/* footer */
 
 footer {
     position: static;
@@ -116,7 +113,7 @@ td {
     /* Careful, this breaks the word wherever it is without a hyphen */
     overflow-wrap: break-word;
     word-wrap: break-word;
-  
+    
     /* Adds a hyphen where the word breaks */
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
@@ -132,6 +129,25 @@ td {
 
 .form-group {
     padding-left: 0rem;
+    display: contents;
+}
+
+.form-control {
+    margin: 0.5rem;
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 2rem;
+}
+
+#email-thx {
+    margin: 2rem;
+}
+
+#email-icon {
+    width: 25%;
+    height: auto;
 }
 
 /* about */

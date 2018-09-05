@@ -1,33 +1,21 @@
-
 <h2 id='page-title'> Contact us</h2>
 
-<div class='form'>
-<form id='paperwork'>
-  <div class='form-group'>
-    <div class='form-group col-xs-12 col-sm-3'>
-      <label for='name' class='sr-only'>Name</label>
-      <input type='text' placeholder='Enter Name' name='name' class='form-control' id='name' >
-    </div>
+<%= flash[:notice] %>
+
+<%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
+<div class="row form">
+  <div class="form-group">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: "form-control", placeholder: "Enter Name" %>
   </div>
-  <div class='form-group'>
-    <div class='form-group col-xs-12 col-sm-3'>
-      <label for='email' class='sr-only'>E-mail</label>
-      <input type='email' placeholder='Enter E-mail here' name='email' class='form-control' id='email'>
-    </div>
+  <div class="form-group">
+    <%= form.label :email %>
+    <%= form.text_field :email, class: "form-control", placeholder: "Enter Email" %>
   </div>
-  <div class='form-group'>
-    <div class='form-group col-xs-12'>
-      <label for='message-box' class='sr-only'>Leave a message</label>
-      <textarea style='resize:none' rows='5' placeholder='Leave a message' name='message' class='form-control' id=message-box></textarea>
-      <p id='visible-comment'></p>
-      <p id='char-Count'></p>
-    </div>
+  <div class="form-group">
+    <%= form.label :message %>
+    <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5 %>
   </div>
-  <div class='form-group'>
-    <div class='form-group col-xs-12'><!-- submit button -->
-      <label for='contact-btn-submit' class='sr-only'>Submit</label>
-      <button type='submit' class='btn btn-default' id='contact-btn-submit'>Submit</button>
-    </div>
-  </div>
-</form>
 </div>
+<%= form.submit "Send", class: "btn" %>
+<% end %>
