@@ -27,7 +27,7 @@ Rails.application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = true
+  config.assets.compile = false
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
@@ -94,4 +94,11 @@ Rails.application.configure do
 
   #Ensure dynamic links shown in emails generate the correct URLs
   config.action_mailer.default_url_options = { host: 'broke-bike-mountain.herokuapp.com' }
+
+  #Load images on heroku
+  config.serve_static_assets = true
+  config.assets.digest = true
+  
+
 end
+
