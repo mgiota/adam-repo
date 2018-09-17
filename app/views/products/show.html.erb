@@ -16,6 +16,8 @@
       <%= number_to_currency(@product.price.to_f, unit: "€", separator: ",") %>
     </p>
     <%= link_to 'Back', products_path %></p>
+    <%= @product.highest_rating_comment %>
+    <%= render 'new_comment' %>
   
   </div>
 </div>
