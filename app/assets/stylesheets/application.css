@@ -198,3 +198,30 @@ label {
     background-color: #ffffff;
     border-radius: 1rem;
 }
+
+/* Show page */
+
+#show {
+    background-color: white;
+    border-radius: 0.5rem;
+    margin: auto;
+    padding: 3rem;
+}
+
+#show-title {
+    padding-top: 2rem;
+}
+
+.show-cat {
+    font-size: large;
+    text-decoration: underline;
+}
+
+.show-img {
+    padding-top: 3rem;
+    width: 100%;
+}
+
+.show-describe {
+    padding: 3rem;
+}
