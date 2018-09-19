@@ -1,4 +1,8 @@
 class Product < ApplicationRecord
+    validates :name, presence: true
+    belongs_to :category
+    has_many :orders
+    has_many :comments
     def self.search(search_term)
         if Rails.env.development?
           # Dev Mode (sqlite3)
