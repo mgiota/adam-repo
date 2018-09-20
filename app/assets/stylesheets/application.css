@@ -199,3 +199,9 @@ label {
     background-color: #ffffff;
     border-radius: 1rem;
 }
+
+@media screen and (max-width: 425px) {
+     .search_bar {
+        display: none !important;
+    }
+}

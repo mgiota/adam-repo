@@ -1,11 +1,11 @@
 <div class="container show">
   <div class="row" data-product-id="<%= @product.id %>">
     <% cache @product do %>
-      <div class="col-sm-6">
-        <div class="product-image">
+      <div class="col-sm-6 show-product">
+      <div class="show-desc">
+        <div class="product-image img-responsive">
           <%= image_tag(@product.image_url, class: "image-fluid img-thumbnail", width: "350") %>
         </div>
-        <div class="show-desc">
           <div>
             <strong>Name: </strong> <%= @product.name %>
           </div>

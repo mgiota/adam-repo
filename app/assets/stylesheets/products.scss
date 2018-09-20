@@ -3,7 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-   /* Proucts */
+    // Products
+
 
 .buttons {
     border-top: 1px solid black;
@@ -34,10 +35,14 @@
     text-transform: capitalize;
 }
 
+    // Product show page
+
 .show {
     background-color: #ffffff;
     border-radius: 0.5rem;
     padding: 2rem;
+    padding-top: 4rem;
+    margin-top: 1rem;
 }
 
 .show-desc {
@@ -45,5 +50,59 @@
 }
 
 .comments {
+    display: block;
+    text-align: left;
+    padding-top: 2rem;
+    border-top: 1px solid #0000003d;
+}
+
+.show-product {
+    display: -webkit-box;
+    width: 100%
+}
+
+.show-desc {
+    display: block;
+    text-align: left;
+    margin: auto;
+    padding: 1rem;
+}
+
+.show-desc div {
+    margin: 0.25rem;
+}
+
+.show-desc div p {
+    padding-top: 2rem;
+}
+
+.product-image img {
+    border: none;
+}
+
+.comments span {
+    font-weight: bolder;
+}
+
+#comment_body {
+    border: 1px solid #0000003d;
+    width: 50%;
+}
+
+#review-submit {
+    border: 1px solid #0000003d;
+}
+
+.product-buttons {
+    margin: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #0000003d;
+}
+
+.product-reviews {
+    padding:1rem;
+}
+
+.review-data {
     display: block;
 }
