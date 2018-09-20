@@ -28,6 +28,10 @@ gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 # Use Authorization
 gem 'cancancan', '~> 2.0'
+# Use Paginator
+gem 'will_paginate', '~> 3.1.0'
+# Add Paginator bootstrap
+gem 'will_paginate-bootstrap'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
