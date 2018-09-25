@@ -11,12 +11,12 @@ Order.destroy_all
 
 products = Product.create([
     {name: "seed product", description: "two wheels and a frame", image_url: "bike1.jpg", price: 505},
-    {name: "seed product", description: "comes with a deck of cards", image_url: "bike2.jpg", price: 600}
+    {name: "seed product", description: "comes with a deck of cards", image_url: "bike2.jpg", price: 600},
     {name: "seed product", description: "made of cardboard tubes", image_url: "bike3.jpg", price: 830}, 
     {name: "seed product", description: "recovered from the titanic", image_url: "bike4.jpg", price: 15.000}
   ])
 
 orders = Order.create([
-    {user_id: 1, product_id: 1, total: 10.0}
+    {user_id: 1, product_id: 1, total: 10.0},
     {user_id: 1, product_id: 2, total: 500.0}
   ])
