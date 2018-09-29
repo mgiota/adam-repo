@@ -5,7 +5,6 @@ Rails.application.routes.draw do
   end
   resources :users
   resources :products
-  resources :categories
   resources :orders, only: [:index, :show, :create, :destroy]
   get 'simple_pages/about'
   get 'simple_pages/contact'
