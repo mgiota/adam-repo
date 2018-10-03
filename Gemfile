@@ -49,6 +49,8 @@ group :development, :test do
   gem 'sqlite3'
   # Use RSpec to test app for bugs
   gem 'rspec-rails', '~> 3.8'
+  # Test controllers
+  gem 'rails-controller-testing'
 end
 
 group :development do
