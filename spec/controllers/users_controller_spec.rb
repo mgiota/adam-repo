@@ -2,9 +2,9 @@ require 'rails_helper'
 
 describe UsersController, type: :controller do
     before do
-        @user1 = FactoryGirl.create(:user)
-        @user2 = FactoryGirl.create(:user)
-      end
+        @user1 = FactoryBot.create(:user)
+        @user2 = FactoryBot.create(:user)
+    end
 
     describe "Get #show" do
         context "when a user is logged in" do
@@ -17,7 +17,7 @@ describe UsersController, type: :controller do
                 get :show, params: {id: @user1.id}
                 expect(response).to be_ok
                 expect(assigns(:user)).to eq @user1
-              end
+            end
         end
 
             it "tries accessing first users show page" do
