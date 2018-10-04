@@ -51,6 +51,10 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.8'
   # Test controllers
   gem 'rails-controller-testing'
+  # Use factorybot to test
+  gem "factory_bot_rails", "~> 4.0"
+  # Use Factory girl
+  gem 'factory_girl_rails', '~> 4.9'
 end
 
 group :development do
