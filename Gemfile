@@ -32,6 +32,8 @@ gem 'cancancan', '~> 2.0'
 gem 'will_paginate', '~> 3.1.0'
 # Add Paginator bootstrap
 gem 'will_paginate-bootstrap'
+# Add Stripe for payments
+gem 'stripe'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
