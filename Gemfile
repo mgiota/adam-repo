@@ -34,6 +34,8 @@ gem 'will_paginate', '~> 3.1.0'
 gem 'will_paginate-bootstrap'
 # Add Stripe for payments
 gem 'stripe'
+# Simplecov gem for testing
+gem 'simplecov', require: false, group: :test
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

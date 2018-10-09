@@ -21,7 +21,7 @@
             </p>
           </div>
           <%= form_with(url: '/payments/create') do |form| %>
-            <%= render partial: "devise/shared/stripe_checkout_button" %>
+            <%= render partial: "shared/stripe_checkout_button" %>
           <% end %>
         </div>
       </div>

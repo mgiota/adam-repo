@@ -80,3 +80,6 @@ bower.json
 
 # Ignore node_modules
 node_modules/
+
+Simplecov tests
+echo "coverage" >> .gitignore
