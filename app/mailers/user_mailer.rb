@@ -18,6 +18,14 @@ class UserMailer < ApplicationMailer
         @email = params[:email]
         @message = params[:message]
         UserMailer.contact_form(@email, @name, @message).deliver_now
-      end
+    end
+
+    def order_placed(user, product)
+      @user = user
+      @product = product
+      mail(to: user.email,
+        from: email,
+        subject: "Thank you for your money sucka!")
+    end
       
   end
