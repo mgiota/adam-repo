@@ -21,7 +21,9 @@
 body {
     text-align: center;
     background-color: #F3F3F3;
-    margin: 0.75rem;
+    margin: 0rem;
+    background-image: url(background2.jpg);
+    background-size: cover;
 }
 
 h1 {
@@ -43,13 +45,11 @@ p {
 
 nav {
     padding: 1rem 0;
-    background-color: #ffffff;
+    background-color: #ffffff00;
     color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
-    border-radius: 1rem;
 }
 
 nav div {
@@ -67,7 +67,7 @@ nav li {
 }
 
 ul a {
-    color: #101010ad;
+    color: #101010;
 }
 
 .nav-item a {
@@ -75,11 +75,21 @@ ul a {
 }
 
 .navbar-brand {
-    display: none;
+    display: flex;
+    font-size: 1.75rem;
+    text-decoration: overline;
 }
 
 .navbar-nav {
     padding: 1rem;
+}
+
+.bg-light {
+    background-color: #ffffff00!important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #F5FCFF;
 }
 
 .btn {
@@ -99,9 +109,7 @@ footer {
     bottom: 0;
     width: 100%;
     height: 4em;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
-    border-radius: 1rem;
+    background-color: #F5FCFF;
     padding: 1em;
     margin-top: 2rem;
 }
@@ -155,15 +163,8 @@ label {
 
 #page-title {
     margin: 3rem;
-    color: #444;
-    text-shadow: 
-      1px 0px 1px #ccc, 0px 1px 1px #eee, 
-      2px 1px 1px #ccc, 1px 2px 1px #eee,
-      3px 2px 1px #ccc, 2px 3px 1px #eee,
-      4px 3px 1px #ccc, 3px 4px 1px #eee,
-      5px 4px 1px #ccc, 4px 5px 1px #eee,
-      6px 5px 1px #ccc, 5px 6px 1px #eee,
-      7px 6px 1px #ccc;
+    color: #F5FCFF;
+    text-decoration: overline;
 }
 
 #about {
