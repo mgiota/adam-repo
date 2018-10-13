@@ -36,9 +36,16 @@ h2, p {
     font-family: 'Dosis', sans-serif;   
 }
 
-p {
+a {
+    font-family: 'Poiret One', cursive;
+}
+
+p, span, strong {
     text-decoration: none;
     font-weight: bold;
+    font-family: 'Poiret One', cursive;
+    color: #101010;
+    
 }
 
     /* nav */
@@ -72,12 +79,15 @@ ul a {
 
 .nav-item a {
     padding-left: 1rem;
+    font-family: 'Poiret One', cursive;
+    font-size: 1rem;
 }
 
 .navbar-brand {
     display: flex;
     font-size: 1.75rem;
     text-decoration: overline;
+    font-family: 'Monoton', cursive;
 }
 
 .navbar-nav {
@@ -94,6 +104,7 @@ ul a {
 
 .btn {
     font-size: inherit;
+    font-family: 'Poiret One', cursive;
     padding: 0.15rem;
     color: #666;
     background-color: #e0e0e0bf;
@@ -165,6 +176,8 @@ label {
     margin: 3rem;
     color: #F5FCFF;
     text-decoration: overline;
+    font-family: 'Amatic SC', cursive;
+    font-size: 3rem;
 }
 
 #about {
@@ -206,3 +219,23 @@ label {
         display: none !important;
     }
 }
+
+.action a {
+    color: black;
+}
+
+/* Product corner cut */
+
+.cut {
+    clip-path: 
+      polygon(
+        0% 5%,     /* top left */
+        5% 0%,     /* top left */
+        100% 0%,    /* top right */
+        100% 5%,   /* top right */
+        100% 95%,  /* bottom right */
+        95% 100%,  /* bottom right */
+        5% 100%,   /* bottom left */
+        0 100%      /* bottom left */
+      );
+  }
