@@ -36,6 +36,8 @@ gem 'will_paginate-bootstrap'
 gem 'stripe'
 # Simplecov gem for testing
 gem 'simplecov', require: false, group: :test
+# Brakeman for security flaws
+gem "brakeman"
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

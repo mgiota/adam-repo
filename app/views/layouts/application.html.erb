@@ -17,61 +17,63 @@
   </head>
 
   <body>
+    <div class="background">
   
-  <% if alert %>
-    <p id="alert" class="alert alert-primary" role='alert'><%= alert %></p>
-  <% end %>
-  <% if notice %>
-    <p id="notice" class="alert alert-primary" role='alert'><%= notice %></p>
-  <% end %>
+      <% if alert %>
+        <p id="alert" class="alert alert-primary" role='alert'><%= alert %></p>
+      <% end %>
+      <% if notice %>
+        <p id="notice" class="alert alert-primary" role='alert'><%= notice %></p>
+      <% end %>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">BB Mountain</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">BB Mountain</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <%= link_to "Home", root_path %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "About", simple_pages_about_path %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "Contact", simple_pages_contact_path %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "Product", products_path %>
-      </li>
-    </ul>
-    <ul class="navbar-nav ml-auto">
-    <% if user_signed_in? %>
-    <li class="nav-item">
-      <%= link_to('Logout', destroy_user_session_path, method: :delete, class: "nav-link") %>
-    </li>
-    <% else %>
-    <li class="nav-item">
-      <%= link_to('Login', new_user_session_path, class: "nav-link") %>
-    </li>
-    <% end %>
-    </li>
-  </ul>
-  </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <%= link_to "Home", root_path %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "About", simple_pages_about_path %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "Contact", simple_pages_contact_path %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "Product", products_path %>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+          <% if user_signed_in? %>
+          <li class="nav-item">
+            <%= link_to('Logout', destroy_user_session_path, method: :delete, class: "nav-link") %>
+          </li>
+          <% else %>
+          <li class="nav-item">
+            <%= link_to('Login', new_user_session_path, class: "nav-link") %>
+          </li>
+          <% end %>
+          </li>
+        </ul>
+        </div>
 
-  <%= form_with(url: products_path, method: 'get', local: true, class: 'search_bar') do |form| %>
-    <%= form.submit 'Search', class: 'btn btn-submit' %>
-    <%= form.text_field :q, id: 'q', value: params[:q], class: 'form-fld' %>
-  <% end %>
+        <%= form_with(url: products_path, method: 'get', local: true, class: 'search_bar') do |form| %>
+          <%= form.submit 'Search', class: 'btn btn-submit' %>
+          <%= form.text_field :q, id: 'q', value: params[:q], class: 'form-fld' %>
+        <% end %>
 
-</nav>
+      </nav>
 
-  <%= yield %>
-
-  <footer>
+    <%= yield %>
+    
+    <footer>
     <span>&copy; 2018 Bike Köln</span>
-  </footer>
-
+    </footer>
+    </div>
+    
   </body>
 </html>

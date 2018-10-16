@@ -22,8 +22,6 @@ body {
     text-align: center;
     background-color: #F3F3F3;
     margin: 0rem;
-    background-image: url(background2.jpg);
-    background-size: cover;
 }
 
 h1 {
@@ -44,8 +42,12 @@ p, span, strong {
     text-decoration: none;
     font-weight: bold;
     font-family: 'Poiret One', cursive;
-    color: #101010;
-    
+    color: #101010;   
+}
+
+.background {
+    background-image: url(background2.jpg);
+    background-size: cover;
 }
 
     /* nav */
@@ -172,6 +174,11 @@ label {
 
 /* about */
 
+.about {
+    height: -webkit-fill-available;
+    padding-bottom: 40%;
+}
+
 #page-title {
     margin: 3rem;
     color: #F5FCFF;
@@ -180,7 +187,7 @@ label {
     font-size: 3rem;
 }
 
-#about {
+#motto {
     font-size: 1rem;
     line-height: 0.75rem;
     margin: 2rem;
