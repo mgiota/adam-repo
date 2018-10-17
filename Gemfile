@@ -38,6 +38,8 @@ gem 'stripe'
 gem 'simplecov', require: false, group: :test
 # Brakeman for security flaws
 gem "brakeman"
+# Zoom on pictures
+gem 'elevatezoom-rails', '~> 1.0'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

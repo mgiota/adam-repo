@@ -68,6 +68,7 @@ GEM
       warden (~> 1.2.3)
     diff-lcs (1.3)
     docile (1.3.1)
+    elevatezoom-rails (1.0.0)
     erubi (1.7.1)
     execjs (2.7.0)
     factory_bot (4.11.1)
@@ -236,6 +237,7 @@ DEPENDENCIES
   cancancan (~> 2.0)
   coffee-rails (~> 4.2)
   devise
+  elevatezoom-rails (~> 1.0)
   factory_bot_rails (~> 4.0)
   jbuilder (~> 2.5)
   jquery-rails
