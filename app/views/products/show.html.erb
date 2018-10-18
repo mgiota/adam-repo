@@ -4,7 +4,7 @@
       <div class="col-sm-6 show-product">
         <div class="show-desc">
           <div class="product-image img-responsive">
-            <%= image_tag(@product.image_url, class: "image-fluid img-thumbnail img-zoom", width: "350", data_zoom_image: "@product.product_image.url") %>
+            <%= image_tag(@product.image_url, class: "image-fluid img-thumbnail img-zoom", width: "350", data_zoom_image: @product.image_url) %>
           </div>
           <div>
             <strong>Name: </strong> <%= @product.name %>
