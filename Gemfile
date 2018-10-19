@@ -40,6 +40,8 @@ gem 'simplecov', require: false, group: :test
 gem "brakeman"
 # Zoom on pictures
 gem 'elevatezoom-rails', '~> 1.0'
+# caching
+gem 'dalli'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

@@ -1,5 +1,6 @@
 <div class="container show">
   <div class="row" data-product-id="<%= @product.id %>">
+  <% cache @product do %>
     <% cache @product do %>
       <div class="col-sm-6 show-product">
         <div class="show-desc">
@@ -23,6 +24,7 @@
           <%= form_with(url: '/payments/create') do |form| %>
             <%= render partial: "shared/stripe_checkout_button" %>
             <%= hidden_field_tag(:product_id, @product.id) %>
+          <% end %>
           <% end %>
         </div>
       </div>
