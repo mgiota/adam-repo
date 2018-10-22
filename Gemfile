@@ -44,6 +44,8 @@ gem 'elevatezoom-rails', '~> 1.0'
 gem 'dalli'
 # Redis gem
 gem 'redis-rails'
+# New relic monitoring
+gem 'newrelic_rpm'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
