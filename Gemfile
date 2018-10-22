@@ -42,6 +42,8 @@ gem "brakeman"
 gem 'elevatezoom-rails', '~> 1.0'
 # caching
 gem 'dalli'
+# Redis gem
+gem 'redis-rails'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
