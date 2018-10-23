@@ -108,6 +108,8 @@ Rails.application.configure do
   config.serve_static_assets = true
   config.assets.digest = true
   
+  config.web_socket_server_url = "wss://broke-bike-mountain.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['https://broke-bike-mountain.herokuapp.com', 'http://broke-bike-mountain.herokuapp.com']
 
 end
 

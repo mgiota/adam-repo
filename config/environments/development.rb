@@ -64,4 +64,8 @@ Rails.application.configure do
 
   #Ensure dynamic links shown in emails generate the correct URLs
   config.action_mailer.default_url_options = { host: 'localhost:3000' }
+
+  # Generate javascript for channels 
+  config.app_generators.javascript_engine = :javascript
+
 end
