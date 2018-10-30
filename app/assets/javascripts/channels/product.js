@@ -24,5 +24,7 @@ App.product = App.cable.subscriptions.create("ProductChannel", {
 
 // Call listen to comments whenever a user opens a page
 $(document).on('turbolinks:load', function() {
-  App.product.listen_to_comments();
+  setTimeout(function() {
+    App.product.listen_to_comments();
+  }, 500)
 });
